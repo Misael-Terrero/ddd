@@ -2,8 +2,8 @@
 
 namespace Src\admin\user\domain\entities;
 
-use Src\admin\user\domain\entities\UserName;
-use Src\admin\user\domain\value_object\UserEmail;
+use Src\admin\user\domain\value_objects\UserName;
+use Src\admin\user\domain\value_objects\UserEmail;
 
 // creando un objeto User
 class User 
@@ -22,11 +22,11 @@ class User
 
     public function name(): UserName
     {
-        return $this->name();
+        return $this->name;
     }
 
     public function email(): UserEmail
     {
-        return $this->email();
+        return $this->email;
     }
 }
