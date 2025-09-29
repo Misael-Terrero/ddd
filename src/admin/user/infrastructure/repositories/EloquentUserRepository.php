@@ -32,9 +32,8 @@ Class EloquentUserRepository implements UserRepositoryInterface
         EloquentUser::updatedOrCreate(
             ['id' => $user->id()],
             [
-                'email' => $user->email()->value(),
                 'username' => $user->name()->value(),
-                
+                'email' => $user->email()->value(),                
             ]
         );
     }

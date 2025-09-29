@@ -15,6 +15,5 @@ final class CreateUserPOSTController extends Controller
         $eloquentRepository = new EloquentUserRepository();
         $createUserUseCase = new CreateUserUseCase($eloquentRepository);
         $createUserUseCase->execute($request->id, $request->name, $request->email);
-
     }
 }
