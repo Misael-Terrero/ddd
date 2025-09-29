@@ -18,9 +18,4 @@ class GetUserByIdUseCase
     {
         return $this->userRepository->findById($id);
     }
-
-    /*public function execute()
-    {
-        
-    }*/
 }
