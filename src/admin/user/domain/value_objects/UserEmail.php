@@ -15,6 +15,11 @@ class UserEmail
         $this->email = $email;
     }
 
+    public function value(): string
+    {
+        return $this->email;
+    }
+
     public function __toString(): string
     {
         return $this->email;

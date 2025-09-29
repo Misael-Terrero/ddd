@@ -6,6 +6,7 @@ use Src\admin\user\domain\value_objects\UserName;
 use Src\admin\user\domain\value_objects\UserEmail;
 
 // creando un objeto User
+// logica del negocio
 class User 
 {
     private int $id;
@@ -28,5 +29,10 @@ class User
     public function email(): UserEmail
     {
         return $this->email;
+    }
+
+    public function id(): int
+    {
+        return $this->id();
     }
 }
